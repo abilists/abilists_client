@@ -295,6 +295,25 @@ function validateId(inputId, isZero) {
     return isError;
 }
 
+/**
+ * Clear input and select
+ * @param {Id of table} table 
+ */
+function clearSearching(table) {
+	var searchTable = document.getElementById(table);
+
+	var inputTag = searchTable.getElementsByTagName("input");
+	clearField(inputTag);
+
+	var selectTag = searchTable.getElementsByTagName("select");
+	clearField(selectTag);
+}
+function clearField(inputTag) {
+	for (i=0; i < inputTag.length; i++) {
+	    inputTag[i].value = "";
+	}
+}
+
 /* 
  * tagNameId : a tag
  * x : this (select tag)
