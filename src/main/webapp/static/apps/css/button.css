@@ -24,3 +24,20 @@
 .menu-works-button {
 	color:#a57b7b;
 }
+
+#closeButton {
+	float:right;
+	display:inline-block;
+	padding:2px 7px;
+	background:#97c2d8;
+	cursor: pointer;
+}
+
+#closeButton:hover {
+	float:right;
+	display:inline-block;
+	padding:2px 7px;
+	background:#97c2d8;
+	color:#fff;
+	cursor: pointer;
+}
