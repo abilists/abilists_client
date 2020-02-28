@@ -1,12 +1,3 @@
-
-div.bar { 
-    position:   absolute;
-	z-index: 2;
-    top:        0px;
-    left:       0px;
-    height:     100%;
-	padding: 10px;
-}
 div.percent {
     position:absolute;
 	z-index: 1;
