@@ -24,6 +24,7 @@ repositories {
 You have to install on your local system.[utility](https://github.com/abilists/image_utility)
 ```
 compile "io.utility:validate:0.0.5" [validate:0.0.5](https://github.com/abilists/validate_utility)
+compile "io.utility:api:0.0.2"
 compile "io.utility:security:0.0.1"
 compile "io.utility:letter:0.0.2" [letter:0.0.2](https://github.com/abilists/letter_utility)
 compile "io.utility:image:0.0.2" [image:0.0.2](https://github.com/abilists/image_utility)
