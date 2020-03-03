@@ -36,7 +36,7 @@ build_fuc () {
     printf "Starting abilists_plugins."
     cd ~/git/abilists_plugins
     gradle clean
-    gradle buildJar
+    gradle -b ./probuild.gradle buildJar
 
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
