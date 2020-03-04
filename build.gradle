@@ -122,7 +122,7 @@ dependencies {
 	compile ('org.springmodules:spring-modules-jakarta-commons:0.8') {
 		exclude group: 'commons-chain', module: 'commons-chain'
 	}
-	compile 'com.h2database:h2:1.4.196'
+	compile 'com.h2database:h2:1.4.200'
 	compile 'eu.bitwalker:UserAgentUtils:1.21'
     compile "io.utility:api:0.0.3"
 	compile "io.utility:validate:0.0.5"
