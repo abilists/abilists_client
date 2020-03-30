@@ -30,13 +30,11 @@ compile "io.utility:letter:0.0.4"
 compile "io.utility:image:0.0.2"
 compile "io.utility:email:0.0.3"
 ```
+* [security:0.0.1](https://github.com/abilists/api_security)
 * [validate:0.0.5](https://github.com/abilists/validate_utility)
-* [api:0.0.3](https://github.com/abilists/api_utility)
-* compile "io.utility:security:0.0.1"
+* [api:0.0.4](https://github.com/abilists/api_utility)
 * [letter:0.0.4](https://github.com/abilists/letter_utility)
 * [image:0.0.2](https://github.com/abilists/image_utility)
-* compile "io.utility:email:0.0.3"
-
 
 ## Get started
 
