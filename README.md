@@ -13,15 +13,7 @@ By Joon Kim
 * [Java8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 * [Gradle3.3](https://services.gradle.org/distributions/gradle-3.3-all.zip)
 
-Using your local repositories
-```
-repositories {
-    mavenLocal()
-    mavenCentral()
-}
-```
-
-You have to install on your local system.[utility](https://github.com/abilists/image_utility)
+You have to install on your local system.
 ```
 compile "io.utility:security:0.0.1"
 compile "io.utility:validate:0.0.5"
@@ -37,10 +29,12 @@ compile "io.utility:image:0.0.2"
 
 ## Get started
 
-* Download h2db file  
-[http://www.abilists.com/home/download](http://www.abilists.com/home/download) from [Abilists.com](http://www.abilists.com).
+* Clone abilists_client
+```
+$ git clone https://github.com/abilists/abilists_client.git
+```
 
-Execute abilists with Jetty.
+* Execute abilists with Jetty.
 ```
 $ gradle jettyRun
 ```
