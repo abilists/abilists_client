@@ -19,6 +19,7 @@ img.border-line {
 	left: 40%;; 
 	width: 50%; 
 }
+
 </style>
 
 	<div class="row" style="margin-top: 65px;">
