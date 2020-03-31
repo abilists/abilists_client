@@ -41,63 +41,13 @@ img.border-line {
 	</div>
 
 	<div class="row fw-row" style="background-color: white;padding: 30px;">
-		<div class="col-md-8">
-			<img class="border-line" src="static/client/img/client03.png?201808290841"  width="100%" alt="profile">
-		</div>
-		<div class="col-md-4 text-center">
-			<h3><@spring.message "client.img.ad.text1"/></h3>
+		<div class="col-md-12">
+			Here is your contents!
 		</div>
 	</div>
 
-	<div class="row fw-row" style="padding: 35px;">
-		<div class="col-md-12 text-center">
-			<h3><@spring.message "client.middle.ad.title1"/></h3>
-			<h4><@spring.message "client.middle.ad.text1"/></h4>
-			<br/>
-			<h3><a href="http://www.abilists.com/home/request/"><@spring.message "client.contact.us"/></a></h3>
-		</div>
-	</div>
-
-	<div class="row fw-row" style="background-color: white;white;padding: 30px;">
-		<div class="col-md-8">
-			<img class="border-line" src="static/client/img/client01.png?201808290841"  width="100%" alt="profile">
-		</div>
-		<div class="col-md-4">
-			<h3><@spring.message "client.img.ad.text2"/></h3>
-		</div>
-	</div>
-
-	<div class="row fw-row">
-		<div class="col-md-12  text-center">
-			<h3><@spring.message "client.middle.ad.title2"/></h3>
-			<h4><@spring.message "client.middle.ad.text2"/></h4>
-			<br/>
-			<h3><a href="http://www.abilists.com/home/request/"><@spring.message "client.contact.us"/></a></h3>
-		</div>
-	</div>
-
-	<div class="row fw-row" style="background-color: white;white;padding: 30px;">
-		<div class="col-md-8">
-			<img class="border-line" src="static/client/img/client02.png?201808290841"  width="100%" alt="profile">
-		</div>
-		<div class="col-md-4">
-			<h3><@spring.message "client.img.ad.text3"/></h3>
-		</div>
-	</div>
-
-	<div class="row fw-row">
-		<div class="col-md-12  text-center">
-			<h3><@spring.message "client.middle.ad.title3"/></h3>
-			<h3><@spring.message "client.middle.ad.text3"/></h3>
-		</div>
-	</div>
-
-	<!-- Placed at the end of the document so the pages load faster -->
-    <script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/3.4.1/jquery.min.js"></script>
-    <script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.4.1/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-
-</script>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="${configBean.contextPath?if_exists}/static/apps/lib/jquery/3.4.1/jquery.min.js"></script>
+<script src="${configBean.contextPath?if_exists}/static/apps/lib/bootstrap-3.4.1/js/bootstrap.min.js"></script>
 
 </@layout.myLayout>

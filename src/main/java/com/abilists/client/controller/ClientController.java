@@ -1,8 +1,6 @@
 package com.abilists.client.controller;
 
 import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -34,47 +32,20 @@ public class ClientController extends HostController {
 	public String index(HttpSession session, ModelMap model) throws Exception {
 		AbilistsModel abilistsModel = new AbilistsModel();
 		abilistsModel.setNavi("plugins");
+		// This is your code - start
 
-		logger.info(System.getProperty("java.class.path"));
-
+		// This is your code - end
 	   	model.addAttribute("model", abilistsModel);
 		return "client/index";
 	}
 
-    @RequestMapping(value = {"restart", "reloadContext"})
-	public void restart(HttpServletRequest request, HttpServletResponse response, ModelMap model) throws Exception {
+    @RequestMapping(value = {"/advertise"}, method=RequestMethod.GET)
+	public String advertise(HttpSession session, ModelMap model) throws Exception {
+		AbilistsModel abilistsModel = new AbilistsModel();
+		abilistsModel.setNavi("plugins");
 
-////        Tomcat tomcat = getTomcatInstance();
-////        tomcat.enableNaming();
-////
-////        // No file system docBase required
-////        StandardContext ctx = (StandardContext) tomcat.addContext("", null);
-//
-//    	String webappDirLocation = "src/main/webapp/";
-//    	
-//    	Tomcat tomcat = new Tomcat();
-//    	
-//    	String webPort = System.getenv("PORT");
-//        if(webPort == null || webPort.isEmpty()) {
-//            webPort = "8081";
-//        }
-//        tomcat.setPort(Integer.valueOf(webPort));
-//        StandardContext ctx = (StandardContext) tomcat.addContext("", null);
-//    	//StandardContext ctx = (StandardContext) tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
-//        logger.info("configuring app with basedir: " + new File("./" + webappDirLocation).getAbsolutePath());
-//
-//        ctx.reload();
-
-//    	StandardContext ctx = (StandardContext) tomcat.addContext("", null);
-//    	ctx.reload();
-
-//    	if (servletContext instanceof StandardContext) {
-//            logger.info("=========== StandardContext ==========");
-//            ((StandardContext) servletContext).reload();
-//        } else {
-//        	logger.info("=========== No StandardContext ==========");
-//        }
-
+	   	model.addAttribute("model", abilistsModel);
+		return "client/advertise";
 	}
 
 }
