@@ -32,10 +32,14 @@
 			<img>
 				<avatar>/img/avatar/</avatar>
 				<bg>/img/bg/</bg>
+				<posts>/img/posts/</posts>
 				<temp>/img/temp/</temp>
 			</img>
 			<files>/files/</files>
-			<temp>/temp/plugins/</temp>
+			<temp>
+				<plugins>/temp/plugins/</plugins>
+				<posts>/temp/posts/</posts>
+			</temp>
 		</path>
 	</upload>
 
