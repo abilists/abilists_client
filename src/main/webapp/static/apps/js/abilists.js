@@ -44,7 +44,7 @@ function isNumber(evt) {
     return true;
 }
 /**
- * How to use 
+ * How to use for lowercase letter
  * onkeypress="return isAlphabets(event)"
  * 
  * @param {*} evt 
@@ -55,6 +55,23 @@ function isAlphabets(evt) {
     	return false;
     }
     return true;
+}
+
+/**
+ * How to use for lowercase letter and capital letters
+ * onkeypress="return isAlphabetsNumbers(event)"
+ * 
+ * true is OK
+ * false is NO
+ * 
+ * @param {*} evt 
+ */
+function isAlphabetsNumbers(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    if ((charCode > 96 && charCode < 123) || (charCode > 64 && charCode < 91) || (charCode > 47 && charCode < 58)) {
+    	return true;
+    }
+    return false;
 }
 
 /**
