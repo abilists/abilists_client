@@ -1,3 +1,19 @@
+
+/* Fixed max width size*/
+@media (max-width: 1024px) { 
+	ul.body-posts-menu {
+	    left: -20px;
+	}
+}
+
+
+/* Fixed max width size*/
+@media (max-width: 992px) { 
+	ul.body-posts-menu {
+	    left: 0px;
+	}
+}
+
 /* Fixed max width size*/
 @media (max-width: 650px) { 
 
@@ -5,6 +21,40 @@
 	h2.ad-title { 
 		font: 22px/22px Helvetica, Sans-Serif;
 	}
+	.filebox label {
+		width: 75px;
+		padding: 8px;
+		font-size: 11px;
+	}
+	.write-btn {
+		float: right;
+		height: 35px; 
+		width: 20%;
+		padding: 3px;
+	}
+	.movie-btn {
+		float: right;
+		height: 35px;
+		width: none; 
+		margin-right: 5px;
+		font-size: 11px;
+		padding: 3px;
+	}
+
+	/* Post - right button */
+	.media-width {
+		width: 80%;
+	}
+	ul.body-posts-menu {
+	    left: -35px;
+	}
+	.dropdown-menu>li>a {
+	    padding: 3px 10px;
+	}
+	ul.body-posts-menu {
+	    min-width: 85px;
+	}
+	/* Post - right button */
 
 	p.ad-contents { 
 		font: 12px/15px Helvetica, Sans-Serif;
@@ -23,37 +73,3 @@
 
 }
 
-
-/* Fixed max width size
-@media (max-width: 1024px) { 
-
-	.show-more-out {
-		width: 100%;
-	}
-	
-	.show-more {
-		width: 100%;
-	}
-
-	ul.body-posts {
-		width: 100%;
-	}
-}
-*/
-/* Fixed max width size
-@media (max-width: 992px) { 
-
-	/* Show more button */
-	.show-more-out {
-		width: 100%;
-	}
-	
-	.show-more {
-		width: 100%;
-	}
-
-	ul.body-posts {
-		width: 100%;
-	}
-}
-*/
