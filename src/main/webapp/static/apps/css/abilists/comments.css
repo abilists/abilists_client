@@ -1,0 +1,38 @@
+div.media-main {
+	margin-top: 8px;
+}
+
+img.comment-img {
+	border-radius: 2px;
+	float: left;
+}
+
+div.comment-input {
+	vertical-align: middle;
+	text-align: right; 
+	padding-bottom: 5px;
+}
+
+textarea.comment-button {
+	height: 45px; 
+	width: 93%; 
+	background-color: #ffffff;
+	border: 1px solid #f3f3f3;
+}
+
+div.comment-dlt-button {
+	text-align: right;
+	padding-top: 5px;
+}
+
+div.comment-img {
+	width: 7%; 
+	float: left;	
+}
+
+div.comment-txt {
+	width: 93%;
+	border-radius: 5px; 
+	padding: 10px;
+	background-color: #f7f7f9;	
+}

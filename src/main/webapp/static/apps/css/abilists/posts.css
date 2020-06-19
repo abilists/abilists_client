@@ -76,7 +76,6 @@ ul.body-posts-menu {
 }
 
 div.posts-link {
-	margin-top: 10px; 
 	padding: 8px; 
 	border-top: 1px solid #f3f3f3;
 }
@@ -94,6 +93,7 @@ div.posts-link {
 }
 
 .media-width {
+	float: right;
 	width: 87%;
 	display: block;	
 }
@@ -101,7 +101,7 @@ div.posts-link {
 .filebox label {
 	width: 110px;
 	display: inline-block;
-	padding: 12px;
+	padding: 11.5px;
 	color: #fff;
 	font-size: 15px;
 	line-height: normal;
@@ -132,4 +132,32 @@ div.posts-link {
 	overflow: hidden;
 	clip: rect(0, 0, 0, 0);
 	border: 0;
+}
+
+.write-btn {
+	float: right;
+	height: 45px; 
+	width: 20%;
+}
+.movie-btn {
+	float: right;
+	height: 45px; 
+	width: 20%; 
+	margin-right: 5px;
+}
+
+
+/* Show more button */
+.show-more-out {
+	width: 100%;
+	color: #232323;
+}
+
+.show-more {
+	width: 100%;
+	color: #232323;
+}
+
+ul.body-posts {
+	width: 100%;
 }
