@@ -215,6 +215,7 @@ function requestbyAjax(curl, cdata) {
         },
         error: function(xhr, status) {
         	console.log("error >> " + xhr.responseText);
+        	alert(xhr.responseText);
             var contentType = xhr.getResponseHeader("Content-Type");
             if (xhr.status === 200 && contentType.toLowerCase().indexOf("text/html") >= 0) {
                 // Login has expired - reload our current page
