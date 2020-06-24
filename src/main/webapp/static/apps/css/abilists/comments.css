@@ -13,11 +13,21 @@ div.comment-input {
 	padding-bottom: 5px;
 }
 
+div.c-comment-input {
+	vertical-align: middle;
+	text-align: right; 
+	padding-bottom: 5px;
+	padding: 10px;
+	background-color: #f7f7f9;
+	border: 1px solid #e0e0e0;
+}
+
 textarea.comment-button {
 	height: 45px; 
 	width: 93%; 
 	background-color: #ffffff;
-	border: 1px solid #f3f3f3;
+	border: 1px solid #cacaca;
+	margin-bottom: 5px;
 }
 
 div.comment-dlt-button {
@@ -35,4 +45,10 @@ div.comment-txt {
 	border-radius: 5px; 
 	padding: 10px;
 	background-color: #f7f7f9;	
+}
+
+div.c-comment-div {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #cacaca;
 }
