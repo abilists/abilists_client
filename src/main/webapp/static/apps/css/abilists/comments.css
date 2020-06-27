@@ -52,3 +52,34 @@ div.c-comment-div {
 	padding-bottom: 10px;
 	border-top: 1px solid #cacaca;
 }
+
+.alert-comment {
+	-webkit-animation-name: alert-comment-ani;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-direction: ease-in-out;
+	animation-name: alert-comment-ani;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+
+@keyframes alert-comment-ani {
+	0% {
+		background: #f2f6ff;
+	}
+	100% {
+		background: white;
+	}
+}
+
+@-webkit-keyframes alert-comment-ani {
+	0% {
+		background: #f2f6ff;
+	}
+	100% {
+		background: white;
+	}
+}
