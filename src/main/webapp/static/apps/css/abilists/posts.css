@@ -60,7 +60,8 @@ ul.body-posts {
 
 li.body-posts-name {
 	list-style-type: none;
-	display: table-cell; width:75%
+	display: table-cell; 
+	width:70%;
 }
 
 li.body-posts-contents {
