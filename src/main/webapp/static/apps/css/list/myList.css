@@ -6,3 +6,12 @@
 	margin: 4px;
 	float:right;	
 }
+
+/* List */
+div.list-right {
+	padding-right: 1px;
+}
+
+div.list-left {
+	padding-left: 1px;
+}
