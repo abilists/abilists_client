@@ -89,7 +89,7 @@ configurations.all {
 }
 
 ext {
-	springVersion = '4.3.24.RELEASE'
+	springVersion = '4.3.27.RELEASE'
 	springSecrityVersion = '4.2.6.RELEASE'
 	logbackVersion = '1.1.3'
 	pagingVersion = '0.2'
