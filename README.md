@@ -17,7 +17,7 @@ You have to install on your local system.
 compile "io.utility:api:0.0.4"
 compile "io.utility:validate:0.0.5"
 compile "io.utility:security:0.0.1"
-compile "io.utility:letter:0.0.5"
+compile "io.utility:letter:0.0.7"
 compile "io.utility:image:0.0.2"
 compile "io.utility:email:0.0.3"
 ```
