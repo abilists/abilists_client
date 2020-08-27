@@ -25,3 +25,10 @@ div.bar {
     height:     100%;
 	padding: 10px;
 }
+
+p.text-zip {
+    position: absolute;
+    top: 70px;
+    left: 15%;
+    font-size: x-large;
+}
