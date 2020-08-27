@@ -157,6 +157,7 @@ div.posts-link {
 .show-more {
 	width: 100%;
 	color: #232323;
+	word-break: break-all;
 }
 
 ul.body-posts {
