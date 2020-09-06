@@ -56,7 +56,7 @@ ul.memo-bg-color li:hover {
 }
 
 .btn span.check-switch {    			
-	opacity: 0.3;				
+	opacity: 0.5;				
 }
 .btn.active span.check-switch {				
 	opacity: 1;				
