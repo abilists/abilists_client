@@ -90,6 +90,24 @@ function isAlphabetsNumbers(evt) {
 }
 
 /**
+ * Check email format
+ * 
+ * @param str
+ * @returns
+ */
+function checkEmail(str) {
+     var regEmail = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+
+     if(!regEmail.test(str)) {
+    	 console.log("checkEmail false ");
+         return false;
+     } else {
+    	 console.log("checkEmail true ");
+         return true;
+     }
+}
+
+/**
  * Check and Get byte length of string.
  * 
  * @param x
@@ -109,6 +127,7 @@ function checkByteLength(x, showTagId, limitByte) {
 		showTag.style.color= "#707070";
 	}
 }
+
 /*
  * https://programmingsummaries.tistory.com/239
  * https://gist.github.com/mathiasbynens/1010324
