@@ -6,4 +6,4 @@ function cntTextByByte(s,b,i,c){
 }
 
 /* how to use */
-console.log(cntTextByByte('안녕하세요 ㅋㅋㅋㅋ, test test'));
+console.log(cntTextByByte('test test'));
