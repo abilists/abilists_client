@@ -137,6 +137,11 @@
 				<path>templates/temp/abilists/</path>
 				<filename>noti.ftlo</filename>
 			</to>
+			<greeting>
+				<ko>templates/temp/greeting_ko.txt</ko>
+				<en>templates/temp/greeting_en.txt</en>
+				<ja>templates/temp/greeting_ja.txt</ja>
+			</greeting>
 		</noti>
 	</template>
 

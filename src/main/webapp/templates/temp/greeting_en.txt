@@ -1,0 +1,28 @@
+Thank you for using Abilists.
+
+Abilists is a talent management system that grasps the current technology and growth trends from an objective point of view.
+Below is information on links to helpful tips for your use.
+
+Change the avatar and background image through the user's settings.
+Change avatar and background image
+http://www.abilists.com/home/help/helpGetting#gettingId02 
+
+Set the user's career and skills.
+User experience and skill setting
+http://www.abilists.com/home/help/helpCore#coreId04
+
+Manage users' projects, tasks, journals and memos.
+Business and information management through user's work
+http://www.abilists.com/home/help/helpCore#coreId05
+
+Plugins are architects that maximize the user's capabilities.
+Install and use required plugins
+http://www.abilists.com/home/help/helpPlugins#pluginsId01
+
+Manage profiles, careers, qualifications, projects and tasks,
+By sharing your information and progress with your colleagues,
+Communication is active and high trust between employees is built.
+
+Thank you.
+
+From developer
