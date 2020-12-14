@@ -506,18 +506,26 @@ function destroyPopover(event) {
 	$jevent.popover('destroy');
 }
 
-/*
-function overChangeColor(obj) {
-	obj.style.cursor = "pointer";
-	obj.style.borderColor = "#e0e6f9";
-	var deep1 = obj.childNodes;
-	deep1[5].style.backgroundColor = "#e0e6f9";
+/* Set Cookie */
+function setCookie(cookie_name, value, days) {
+	var exdate = new Date();
+	exdate.setDate(exdate.getDate() + days);
+	var cookie_value = escape(value) + ((days == null) ? '' : ';    expires=' + exdate.toUTCString());
+	document.cookie = cookie_name + '=' + cookie_value;
 }
 
-function outChangeColor(obj) {
-	obj.style.cursor = "pointer";
-	obj.style.borderColor = "#ccc";
-	var deep1 = obj.childNodes;
-	deep1[5].style.backgroundColor = "#eee";
+/* Get Cookie */
+function getCookie(cookie_name) {
+	var x, y;
+	var val = document.cookie.split(';');
+
+	for (var i = 0; i < val.length; i++) {
+		x = val[i].substr(0, val[i].indexOf('='));
+		y = val[i].substr(val[i].indexOf('=') + 1);
+		x = x.replace(/^\s+|\s+$/g, '');
+		if (x == cookie_name) {
+			return unescape(y);
+		}
+	}
 }
-*/
+

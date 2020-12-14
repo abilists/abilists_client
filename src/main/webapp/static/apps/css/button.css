@@ -50,3 +50,20 @@
 	border-color: #a57b7b;
  font-weight: bold;
 }
+
+#closeButton {
+    float:right;
+    display:inline-block;
+    padding:2px 7px;
+    background:#d89797;
+	cursor: pointer;
+}
+
+#closeButton:hover {
+    float:right;
+    display:inline-block;
+    padding:2px 7px;
+    background:#d89797;
+   	color:#fff;
+	cursor: pointer;
+}

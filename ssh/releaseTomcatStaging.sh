@@ -6,11 +6,11 @@ APP_PATH="/usr/local/tomcat/webapps/"
 APP_PATH_ROOT="${APP_PATH}ROOT"
 
 APP_PATH_TO_WAR="${APP_PATH}ROOT.war"
-APP_PATH_FROM_WAR="/home/joonk/git/abilists_client/build/libs/ROOT.war"
+APP_PATH_FROM_WAR="/home/njoonk/git/abilists_client/build/libs/ROOT.war"
 
-USER_ID=joonk
+USER_ID=njoonk
 
-M_VERSION="1.0.0"
+M_VERSION="1.1.2"
 
 build_fuc () { 
     printf "Starting base_bean."
