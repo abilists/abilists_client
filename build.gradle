@@ -45,7 +45,7 @@ buildscript {
 // gradle install -Pprofile=staging -Pmversion=0.5.3
 // gradle -Pprofile=product -Pmversion=0.5.3 deployWar
 final String DEFAULT_PROFILE = 'staging'
-final String DEFAULT_MVERSION = '1.0.0'
+final String DEFAULT_MVERSION = '1.1.2'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE
@@ -92,7 +92,7 @@ ext {
 	springVersion = '4.3.28.RELEASE'
 	springSecrityVersion = '4.2.6.RELEASE'
 	logbackVersion = '1.1.3'
-	pagingVersion = '0.2'
+	pagingVersion = '0.3'
 }
 
 dependencies {

@@ -74,7 +74,7 @@ div.c-comment-div {
 
 @keyframes alert-comment-ani {
 	0% {
-		background: #fff2f2;
+		background: #ffc2c2;
 	}
 	100% {
 		background: white;
@@ -83,7 +83,7 @@ div.c-comment-div {
 
 @-webkit-keyframes alert-comment-ani {
 	0% {
-		background: #fff2f2;
+		background: #ffc2c2;
 	}
 	100% {
 		background: white;

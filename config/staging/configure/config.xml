@@ -98,45 +98,17 @@
 	</files>
 
 	<template>
-		<users>
+		<plugins>
 			<from>
 				<path>templates/temp/abilists</path>
-				<filename>users.ftlh</filename>
+				<filename>plugins.ftlh</filename>
 			</from>
 			<to>
 				<path>templates/temp/abilists/</path>
-				<filename>users.ftlo</filename>
+				<filename>plugins.ftlo</filename>
 			</to>		
-		</users>
-		<projects>
-			<from>
-				<path>templates/temp/abilists</path>
-				<filename>projects.ftlh</filename>
-			</from>
-			<to>
-				<path>templates/temp/abilists/</path>
-				<filename>projects.ftlo</filename>
-			</to>
-		</projects>
-		<reports>
-			<from>
-				<path>templates/temp/abilists</path>
-				<filename>reports.ftlh</filename>
-			</from>
-			<to>
-				<path>templates/temp/abilists/</path>
-				<filename>reports.ftlo</filename>
-			</to>
-		</reports>
+		</plugins>
 		<noti>
-			<from>
-				<path>templates/temp/abilists</path>
-				<filename>noti.ftlh</filename>
-			</from>
-			<to>
-				<path>templates/temp/abilists/</path>
-				<filename>noti.ftlo</filename>
-			</to>
 			<greeting>
 				<ko>templates/temp/greeting_ko.txt</ko>
 				<en>templates/temp/greeting_en.txt</en>
