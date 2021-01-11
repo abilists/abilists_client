@@ -26,3 +26,63 @@ ul li.overview {
 .breadcrumbs-right-after:after {
 	border-left: 1em solid #dc7272 !important;
 }
+
+.dropArea {
+    outline: 2px dashed #7b8ca5 ;
+    outline-offset:-10px;  
+    text-align: center;
+    transition: all .15s ease-in-out;
+    background-color: #dde2e8;
+	padding: 35px;
+}
+
+.filebox label {
+	display: inline-block;
+	color: #fff;
+	font-size: 15px;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #c58080;
+	cursor: pointer;
+	border: 1px solid #9a5c5c;
+	border-radius: .25em;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+.filebox label:hover {
+	background-color: #f1acac;
+	color: #ffffff;
+}
+
+.filebox label:active {
+	background-color: #ffffff;
+}
+
+.filebox input[type="file"] {
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.dropdown-menu-resume {
+	position: absolute;
+	min-width: 120px;
+	z-index: 1000;
+	padding: 5px 0;
+	font-size: 14px;
+	text-align: left;
+	list-style: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 6px 12px rgba(0,0,0,.175);
+	display: none;
+	float: left;
+	margin: 2px 0 0;
+}
