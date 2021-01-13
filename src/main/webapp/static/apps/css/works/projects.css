@@ -31,3 +31,33 @@ ul li.header {
 	}
 
 }
+
+/** Used for javascript **/
+ul.body-posts-menu {
+	left:-20px;
+	min-width: 110px;
+}
+.resize-modal {
+	border: 1px solid #ccc; 
+	font-size: 20px; 
+	padding: 3px;
+}
+.resize-button {
+    float: right;
+    position: absolute;
+    top: 27px;
+    right: 15px;
+}
+.popover-title{
+	color: #5a5a5a;
+}
+.popover-content {
+	color: #5a5a5a;
+}
+
+div.adjust-width-right {
+	padding-right: 0px;
+}
+div.adjust-width-left {
+	padding-left: 5px;
+}

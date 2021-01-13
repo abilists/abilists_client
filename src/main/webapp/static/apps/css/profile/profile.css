@@ -86,3 +86,29 @@ ul li.overview {
 	float: left;
 	margin: 2px 0 0;
 }
+
+#newToggleId, #newSummaryId, #newToggleSkillsId, #newToggleLangId, #newToggleCertiId {
+	color: #d4ebff;
+}
+#newToggleId:hover, #newSummaryId:hover, #newToggleSkillsId:hover, #newToggleLangId:hover, #newToggleCertiId:hover {
+   	color: #ffffff;
+}
+
+ul.hashtags {
+	list-style: none;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0px;
+	text-align: center;
+}
+
+.hashtags-box {
+	list-style: none; 
+	width: 171px;
+	margin: 10px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+	padding: 10px;
+	display: inline-block;
+}

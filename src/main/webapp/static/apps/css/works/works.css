@@ -32,3 +32,10 @@ p.text-zip {
     left: 15%;
     font-size: x-large;
 }
+
+#newToggleId {
+	color: #f9d5d5;
+}
+#newToggleId:hover {
+   	color: #ffffff;
+}

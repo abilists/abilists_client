@@ -4,6 +4,7 @@ ul.memo {
   margin:auto;
   overflow:hidden;
   padding:0px;
+  text-align: center;
 }
 
 ul.memo li a{
@@ -28,8 +29,8 @@ ul.memo li a:hover {
 
 ul.memo li{
   position: relative;
-  margin:10px;
-  float:left;
+  margin:8px;
+  display: inline-block;
 }
 
 /* Select color */

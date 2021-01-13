@@ -40,3 +40,24 @@ canvas {
 	-webkit-user-select: none;
 	-ms-user-select: none;
 }
+
+.resize-button {
+    float: right;
+    position: absolute;
+    top: 87px;
+    right: 15px;
+}
+
+.resize-modal {
+	border: 1px solid #ccc; 
+	font-size: 20px; 
+	padding: 3px;
+}
+
+/* Works.Tasks */
+a.resize-button-view {
+    float: right;
+    position: absolute;
+    top: 92px;
+    right: 15px;
+}
