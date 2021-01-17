@@ -86,4 +86,18 @@
 		padding-left: 15px;
 	}
 
+	/* Works.Tasks */
+	a.resize-button {
+	    float: right;
+	    position: absolute;
+	    top: 144px;
+	    right: 15px;
+	}
+	/* Works.Tasks */
+	a.resize-button-view {
+	    float: right;
+	    position: absolute;
+	    top: 149px;
+	    right: 15px;
+	}
 }

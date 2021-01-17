@@ -8,8 +8,11 @@
 	<paging>
 		<row>
 			<ten>10</ten>
+			<tenfive>15</tenfive>
 			<twenty>20</twenty>
+			<twentyfive>25</twentyfive>
 			<thirty>30</thirty>
+			<thirtyfive>35</thirtyfive>
 		</row>
 		<limit>
 			<total>2000</total>
@@ -40,6 +43,7 @@
 				<plugins>/temp/plugins/</plugins>
 				<posts>/temp/posts/</posts>
 			</temp>
+			<resumes>/resumes/</resumes>
 		</path>
 	</upload>
 
