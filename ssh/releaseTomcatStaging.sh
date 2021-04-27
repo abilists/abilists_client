@@ -47,7 +47,8 @@ build_fuc () {
     printf "Starting abilists_client. parameter count : $#, all parameter=$@, option=$1"
     cd ~/git/abilists_client
     gradle clean
-    gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
+# gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
+    gradle -b ./probuild.gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
 
 }
 

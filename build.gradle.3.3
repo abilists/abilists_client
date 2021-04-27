@@ -2,31 +2,44 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 apply plugin: 'war'
-apply plugin: 'org.gretty'
+apply plugin: 'jetty'
+apply plugin: 'org.sonarqube'
+apply plugin: 'jacoco'
 
 // gradle dependencyReport
 apply plugin: 'project-report'
+// apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
+//./gradlew sonarqube
+//./gradlew sonarqube -x test
+sonarqube {
+    properties {
+        property "sonar.projectName", "Project :: Abilists Apps"
+        property "sonar.projectKey", "$project.group:$project.name"
+        property "sonar.language", "java"
+        property "sonar.sources", "src"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.junit.reportsPath", "${project.buildDir}/test-results"
+        property "sonar.jacoco.reportPath", "${project.buildDir}/jacoco/test.exec"
+    }
+}
+
 buildscript {
-	repositories {
+	repositories { 
 		mavenCentral()
+		jcenter()
 		maven {
 			url "https://plugins.gradle.org/m2/"
 		}
-		jcenter()
 	}
 	dependencies { 
-    	classpath 'org.gretty:gretty:+'
+    	classpath 'org.ajoberstar:gradle-jacoco:0.1.0'
+    	classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.3'
+    	// classpath 'org.akhikhl.gretty:gretty:+'
 	}
-}
-
-repositories {
-	mavenLocal()
-    mavenCentral()
-    jcenter()
 }
 
 // gradle install -Pprofile=staging -Pmversion=0.5.3
@@ -59,9 +72,20 @@ jar {
 	}
 }
 
+repositories {
+	mavenLocal()
+    mavenCentral()
+}
+
 // For provided jars
 configurations {
 	provided
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'xml-apis:xml-apis:1.0.b2'
+    }
 }
 
 ext {
@@ -116,19 +140,25 @@ dependencies {
 	testCompile 'org.glassfish.web:el-impl:2.2' // For Junit
 }
 
-farm {
-  // 'jetty7', 'jetty8', 'jetty9', 'jetty93', 'jetty94', 'tomcat7', 'tomcat8'
-  servletContainer = 'jetty9'
-}
-
 // gradle jettyRun
-gretty {
-	// springBoot = true
+jettyRun {
 	httpPort = 9003
-	scanInterval = 1
+	reload = 'automatic'
+	scanIntervalSeconds = 2
 	// Change context path (base url). otherwise defaults to name of project
 	contextPath = ''
-	jacocoEnabled = false
+}
+
+test {
+    systemProperties 'property': 'value'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
 }
 
 // Release for your local
@@ -137,7 +167,7 @@ war {
 }
 
 // Windows - C:/Users/house/Documents
-task deployWar {
+task deployWar << {
 	copy {
 		from 'build/libs/ROOT.war'
 		into 'webapps'
@@ -149,3 +179,8 @@ task deployWar {
 //$ gradle deployWar
 // gradle -Pprofile=product deployWar
 deployWar.dependsOn(war)
+
+// $ gradle wrapper
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.3'
+}

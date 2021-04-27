@@ -1,11 +1,9 @@
+// gradle -b ./probuild.gradle
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 apply plugin: 'war'
 apply plugin: 'org.gretty'
-
-// gradle dependencyReport
-apply plugin: 'project-report'
 
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
@@ -114,21 +112,6 @@ dependencies {
 	testCompile "junit:junit:4.12"
 	testCompile 'javax.servlet:javax.servlet-api:4.0.1'
 	testCompile 'org.glassfish.web:el-impl:2.2' // For Junit
-}
-
-farm {
-  // 'jetty7', 'jetty8', 'jetty9', 'jetty93', 'jetty94', 'tomcat7', 'tomcat8'
-  servletContainer = 'jetty9'
-}
-
-// gradle jettyRun
-gretty {
-	// springBoot = true
-	httpPort = 9003
-	scanInterval = 1
-	// Change context path (base url). otherwise defaults to name of project
-	contextPath = ''
-	jacocoEnabled = false
 }
 
 // Release for your local
