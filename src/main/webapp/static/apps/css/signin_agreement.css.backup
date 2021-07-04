@@ -1,0 +1,65 @@
+.form-signin {
+	padding: 15px 35px 35px;
+	margin: 0 auto;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: rgba(255, 255, 255, 0.7);
+	height: 285px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+#progress {
+    padding: 0;
+    list-style-type: none;
+    font-family: arial;
+	font-size: 22px;
+    clear: both;
+    line-height: 1em;
+    margin: 0 -1px;
+    text-align: center;
+}
+
+#progress li {
+	float: left;
+	padding: 30px 20px 30px 30px;
+	background: #eee;
+	color: #fff;
+	position: relative;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	width: 33%;
+	margin: 0 1px;
+}
+
+#progress li:before {
+    content: '';
+	border-left: 37px solid #ffffff;
+	border-top: 45px solid transparent;
+	border-bottom: 37px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+#progress li:after {
+    content: '';
+	border-left: 37px solid #eee;
+	border-top: 45px solid transparent;
+	border-bottom: 37px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 20;
+}
+
+#progress li.active {
+    background: #7e8ea7;
+}
+
+#progress li.active:after {
+    border-left-color: #7e8ea7;
+}
