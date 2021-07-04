@@ -44,6 +44,19 @@ function isNumber(evt) {
     return true;
 }
 
+/**
+ * How to use 
+ * onkeypress="return isLong(event)"
+ * 
+ * @param {*} evt 
+ */
+function isLong(evt) {
+    var charCode = (evt.which) ? evt.which : event.keyCode;
+    if ((charCode > 47 && charCode < 58) || charCode == 46) {
+    	return true;
+    }
+    return false;
+}
 
 function isAllNumber(obj) {
 	
@@ -398,10 +411,7 @@ function clearField(inputTag) {
  * x : this (select tag)
  * When a Select Tag is selected, It works  
  */
-
 function sltDataList(x) {
-	// var sltMtSkillId = document.getElementById(tagNameId);
-	// sltMtSkillId.value = x.value;
 	document.sltForm.submit();
 }
 
@@ -529,3 +539,8 @@ function getCookie(cookie_name) {
 	}
 }
 
+//Close message
+function selfClose(alertId) {
+	alertBoxId = document.getElementById(alertId);
+	alertBoxId.style.display = 'none';
+}

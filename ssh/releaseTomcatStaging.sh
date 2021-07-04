@@ -10,7 +10,7 @@ APP_PATH_FROM_WAR="/home/njoonk/git/abilists_client/build/libs/ROOT.war"
 
 USER_ID=njoonk
 
-M_VERSION="1.3.5"
+M_VERSION="1.5.0"
 
 build_fuc () { 
     printf "Starting base_bean."
@@ -47,7 +47,8 @@ build_fuc () {
     printf "Starting abilists_client. parameter count : $#, all parameter=$@, option=$1"
     cd ~/git/abilists_client
     gradle clean
-    gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
+# gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
+    gradle -b ./probuild.gradle -Pprofile=$1 -Pmversion=${M_VERSION} deployWar
 
 }
 
