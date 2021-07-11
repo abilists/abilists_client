@@ -30,7 +30,7 @@ repositories {
 // gradle install -Pprofile=staging -Pmversion=0.5.3
 // gradle -Pprofile=product -Pmversion=1.5.0 deployWar
 final String DEFAULT_PROFILE = 'staging'
-final String DEFAULT_MVERSION = '1.5.0'
+final String DEFAULT_MVERSION = '1.5.1'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE
