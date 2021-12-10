@@ -6,20 +6,21 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 apply plugin: 'war'
-apply from: 'https://raw.github.com/gretty-gradle-plugin/gretty/master/pluginScripts/gretty.plugin'
-
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
 
 buildscript {
   repositories {
-    jcenter()
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
   }
-
   dependencies {
-    classpath 'org.gretty:gretty:+'
+    classpath "org.gretty:gretty:3.0.4"
   }
 }
+apply plugin: "org.gretty"
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 repositories {
   jcenter()
@@ -101,7 +102,7 @@ dependencies {
 /**/
 farm {
 	// 'jetty7', 'jetty8', 'jetty9', 'jetty93', 'jetty94', 'tomcat7', 'tomcat8'
-	servletContainer = 'tomcat9'
+	servletContainer = 'jetty94'
 }
 
 gretty {
