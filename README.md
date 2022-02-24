@@ -1,6 +1,6 @@
 # <a href="http://www.abilists.com" ><img src="https://github.com/minziappa/abilists_client/blob/master/src/main/webapp/static/apps/img/abilists/logo01.png" alt="Abilists"></a>.com
 
-## About
+## About2
 Abilists is a talent management system that grasps the current technology and growth trends from an objective point of view. Manage profiles, career, eligibility, projects and tasks, and share information with colleagues. By sharing progress and achievement, it is utilized in everyday communication and information among staff is activated.
 
 ![markdown](https://github.com/abilists/abilists_client/blob/master/doc/img/list01.gif)
