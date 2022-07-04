@@ -24,9 +24,9 @@ configurations {
 ext {
 	springVersion = '4.3.30.RELEASE'
 	springSecrityVersion = '4.2.20.RELEASE'
+	pagingVersion = '0.5'
 	logbackVersion = '1.2.9'
 	slf4jVersion = '1.7.32'
-	pagingVersion = '0.5'
 }
 
 dependencies {
