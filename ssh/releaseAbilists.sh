@@ -10,7 +10,7 @@ APP_PATH_FROM_WAR="/home/njoonk/git/abilists_client/build/libs/ROOT.war"
 
 USER_ID=njoonk
 
-M_VERSION="1.5.7"
+M_VERSION="1.6.0"
 
 build_fuc () { 
     printf "Starting base_bean."

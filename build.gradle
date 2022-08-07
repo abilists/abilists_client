@@ -74,21 +74,21 @@ dependencies {
 	compile "io.utility:security:0.0.5"
 	compile "io.utility:letter:0.0.7"
 	compile "io.utility:image:0.0.2"
-	compile "io.utility:email:0.0.3"
+	compile "io.utility:email:0.0.7"
 	compile "io.paging:paging:" + pagingVersion
 	compile fileTree(dir: 'libs', include: '*.jar')
-	provided 'org.apache.tomcat:tomcat-servlet-api:8.5.42'
-	provided 'org.apache.tomcat:tomcat-catalina:8.5.42'
+	provided 'org.apache.tomcat:tomcat-servlet-api:9.0.65'
+	provided 'org.apache.tomcat:tomcat-catalina:9.0.65'
 	testCompile 'org.springframework:spring-test:' + springVersion
 	testCompile "junit:junit:4.13.2"
 	testCompile 'javax.servlet:javax.servlet-api:4.0.1'
 	testCompile 'org.glassfish.web:el-impl:2.2'
 }
 
-// gradle install -Pprofile=staging -Pmversion=0.5.3
-// gradle -Pprofile=product -Pmversion=1.5.0 deployWar
+// gradle install -Pprofile=staging -Pmversion=1.6.0
+// gradle -Pprofile=product -Pmversion=1.6.0 deployWar
 final String DEFAULT_PROFILE = 'staging'
-final String DEFAULT_MVERSION = '1.5.7'
+final String DEFAULT_MVERSION = '1.6.0'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE
