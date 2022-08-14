@@ -134,7 +134,7 @@ select.taForm {
 
 .taForm-disable {
     background-color: #ededed !important;
-    cursor: not-allowed;
+    cursor: auto;
 }
 
 /* Default box */

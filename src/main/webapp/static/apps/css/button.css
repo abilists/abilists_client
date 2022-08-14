@@ -25,22 +25,45 @@
 	color:#a57b7b;
 }
 
-#closeButton {
-	float:right;
-	display:inline-block;
-	padding:2px 7px;
-	background:#97c2d8;
-	cursor: pointer;
+/* mylist */
+#aProfileId {
+	width: 95%; 
+	height: 80px; 
+	margin-top: 10px; 
+	margin-bottom: 15px; 
+	background-color: #7b8ca5; 
+	color: white;
+	padding-top: 30px;
 }
 
-#closeButton:hover {
-	float:right;
-	display:inline-block;
-	padding:2px 7px;
-	background:#97c2d8;
-	color:#fff;
-	cursor: pointer;
+#aProfileId:hover {
+	width: 95%; 
+	height: 80px; 
+	margin-top: 10px; 
+	margin-bottom: 15px; 
+	background-color: #9da9bb; 
+	color: white;
+	padding-top: 30px;
 }
+
+#aWorksId {
+	width: 95%; 
+	height: 80px;
+	margin-bottom: 5px; 
+	background-color: #a57b7b; 
+	color: white;
+	padding-top: 30px;
+}
+
+#aWorksId:hover {
+	width: 95%; 
+	height: 80px;
+	margin-bottom: 5px; 
+	background-color: #cbb0b0; 
+	color: white;
+	padding-top: 30px;
+}
+/* mylist */
 
 .btn-more-view {
 	background-color: #fff;

@@ -23,7 +23,7 @@ sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
 // gradle install -Pmversion=0.5.3
-final String DEFAULT_MVERSION = '1.6.0'
+final String DEFAULT_MVERSION = '1.6.5.0'
 allprojects {
 	if (!project.hasProperty('mversion') || !mversion) {
 		ext.mversion = DEFAULT_MVERSION
