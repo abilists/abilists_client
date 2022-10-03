@@ -15,18 +15,18 @@ Abilists is a talent management system that grasps the current technology and gr
 You have to install on your local system.
 ```
 compile "io.utility:api:0.0.4"
-compile "io.utility:validate:0.0.5"
-compile "io.utility:security:0.0.3"
+compile "io.utility:validate:0.0.6"
+compile "io.utility:security:0.0.5"
 compile "io.utility:letter:0.0.7"
 compile "io.utility:image:0.0.2"
-compile "io.utility:email:0.0.3"
+compile "io.utility:email:0.0.7"
 ```
 * [api:0.0.4](https://github.com/abilists/api_utility)
-* [validate:0.0.5](https://github.com/abilists/validate_utility)
-* [security:0.0.1](https://github.com/abilists/api_security)
-* [letter:0.0.5](https://github.com/abilists/letter_utility)
+* [validate:0.0.6](https://github.com/abilists/validate_utility)
+* [security:0.0.5](https://github.com/abilists/api_security)
+* [letter:0.0.7](https://github.com/abilists/letter_utility)
 * [image:0.0.2](https://github.com/abilists/image_utility)
-* [email:0.0.3](https://github.com/abilists/email_utility)
+* [email:0.0.7](https://github.com/abilists/email_utility)
 
 ## Get started
 

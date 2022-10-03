@@ -1,0 +1,37 @@
+/* mylist */
+#adminProfileId {
+	width: 75%;
+	height: 70px;
+	margin-bottom: 5px;
+	background-color: #7b8ca5;
+	color: white;
+	padding-top: 25px;
+}
+
+#adminProfileId:hover {
+	width: 75%;
+	height: 70px;
+	margin-bottom: 5px;
+	background-color: #9da9bb;
+	color: white;
+	padding-top: 25px;
+}
+
+
+#adminWorksId {
+	width: 75%;
+	height: 70px;
+	margin-bottom: 5px;
+	background-color: #a57b7b; 
+	color: white;
+	padding-top: 30px;
+}
+
+#adminWorksId:hover {
+	width: 75%;
+	height: 70px;
+	margin-bottom: 5px;
+	background-color: #cbb0b0; 
+	color: white;
+	padding-top: 25px;
+}

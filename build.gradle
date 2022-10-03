@@ -88,7 +88,7 @@ dependencies {
 // gradle install -Pprofile=staging -Pmversion=1.6.0
 // gradle -Pprofile=product -Pmversion=1.6.0 deployWar
 final String DEFAULT_PROFILE = 'staging'
-final String DEFAULT_MVERSION = '1.6.5.0'
+final String DEFAULT_MVERSION = '1.7.0.0'
 allprojects {
 	if (!project.hasProperty('profile') || !profile) {
 		ext.profile = DEFAULT_PROFILE
