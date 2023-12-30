@@ -19,6 +19,7 @@ repositories {
     // Use Maven Central for resolving dependencies.
 	mavenLocal()
     mavenCentral()
+    jcenter()
 }
 
 sourceCompatibility = '1.8'
@@ -29,8 +30,9 @@ tasks.withType(JavaCompile){
 	options.encoding = 'UTF-8'
 }
 
+// Set master version
 // gradle install -Pmversion=1.5.1
-final String DEFAULT_MVERSION = '1.8.0.0'
+final String DEFAULT_MVERSION = '2.0.0.0'
 allprojects {
 	if (!project.hasProperty('mversion') || !mversion) {
 		ext.mversion = DEFAULT_MVERSION
@@ -58,7 +60,7 @@ dependencies {
 
 	implementation 'commons-beanutils:commons-beanutils:1.8.3'
 	implementation 'commons-configuration:commons-configuration:1.9'
-    implementation 'commons-fileupload:commons-fileupload:1.5'
+	implementation 'commons-fileupload:commons-fileupload:1.5'
 	implementation ('org.springmodules:spring-modules-jakarta-commons:0.8') {
 		exclude group: 'log4j', module: 'log4j'
 		exclude group: 'commons-chain', module: 'commons-chain'
@@ -78,13 +80,14 @@ dependencies {
 
     implementation 'io.utility:api:0.0.7'
 	implementation 'io.utility:security:0.0.5'
-	implementation 'io.utility:letter:0.0.8'
+	implementation 'io.utility:letter:0.1.0'
 	implementation 'io.utility:image:0.0.2'
 	implementation 'io.utility:email:0.0.8'
 	implementation 'io.utility:validate:0.0.6'
 	implementation 'io.paging:paging:' + pagingVersion
 
 	implementation fileTree(dir: 'libs', include: '*.jar')
+	implementation 'org.jsoup:jsoup:1.16.1'
 
 	implementation 'org.freemarker:freemarker:2.3.32'
 	implementation 'org.mybatis:mybatis:3.2.8'
@@ -98,7 +101,7 @@ dependencies {
 	implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
 	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
 
-	implementation 'com.h2database:h2:1.4.200'
+	implementation 'com.h2database:h2:2.2.224'
 
 	providedCompile 'org.apache.tomcat:tomcat-servlet-api:9.0.65'
 	providedCompile 'org.apache.tomcat:tomcat-catalina:9.0.65'
@@ -122,6 +125,24 @@ gretty {
 	contextPath = ''
 	httpsEnabled = true
 	jacocoEnabled = false
+}
+
+// -Pprofile=develop
+final String DEFAULT_PROFILE = 'local'
+allprojects {
+	if (!project.hasProperty('profile') || !profile) {
+		ext.profile = DEFAULT_PROFILE
+	}
+	sourceSets {
+		main {
+			resources {
+				srcDir "config/${profile}"
+			}
+		}
+	}
+	processResources {
+        duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE
+    }
 }
 
 // Release for your local
