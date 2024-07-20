@@ -43,7 +43,7 @@ allprojects {
 version = mversion
 
 ext {
-	logbackVersion = '1.2.9'
+	logbackVersion = '1.3.4'
 	slf4jVersion = '1.7.32'
 	springVersion = '5.3.30'
 	springSecrityVersion = '5.7.4'
