@@ -35,13 +35,13 @@ build_fuc () {
 
     printf "Starting abilists_plugins."
     cd ~/git/abilists_plugins
-    gradle -b ./probuild.gradle clean build -x test
-    gradle -b ./probuild.gradle buildJar
+    gradle -b ./build.gradle clean build -x test
+    gradle -b ./build.gradle buildJar
 
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
-    gradle -b ./probuild.gradle -Pmversion=${M_VERSION} clean build -x test
-    gradle -b ./probuild.gradle -Pmversion=${M_VERSION} buildJar
+    gradle -b ./build.gradle -Pmversion=${M_VERSION} clean build -x test
+    gradle -b ./build.gradle -Pmversion=${M_VERSION} buildJar
 
     printf "Starting abilists_client. parameter count : $#, all parameter=$@, option=$1"
     cd ~/git/abilists_client
