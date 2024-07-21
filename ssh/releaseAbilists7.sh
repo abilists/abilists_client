@@ -40,8 +40,8 @@ build_fuc () {
 
     printf "Starting abilists_apps."
     cd ~/git/abilists_apps
-    gradle -b ./build.gradle -Pmversion=${M_VERSION} clean build -x test
-    gradle -b ./build.gradle -Pmversion=${M_VERSION} buildJar
+    gradle -b ./probuild.gradle -Pmversion=${M_VERSION} clean build -x test
+    gradle -b ./probuild.gradle -Pmversion=${M_VERSION} buildJar
 
     printf "Starting abilists_client. parameter count : $#, all parameter=$@, option=$1"
     cd ~/git/abilists_client
